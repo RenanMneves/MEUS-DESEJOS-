@@ -1,7 +1,7 @@
 import { Card } from "../Card/Card";
 import styles from "./CardGrid.module.css";
 
-export const CardGrid = ({ wishs }) => {
+export const CardGrid = ({ wishs, handleDelete }) => {
   return (
     <div className={styles.grid}>
       {wishs.map((wish, index) => (
