@@ -2,17 +2,23 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  background-color: #96a6ba;
+  background-color: #f4f5f7;
   padding: 10px;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+  background-position: right;
+  background-image: url(https://img.elo7.com.br/product/zoom/3F685E9/quadro-led-painel-luminoso-rgb-gamer-call-of-duty-76x20cm-microsft.jpg);
 }
 
 .inputContainer {
   display: flex;
   flex-direction: column;
   gap: 2px;
+}
+
+.inputContainer > label {
+  color: white;
 }
 
 .inputContainer > input {
@@ -23,8 +29,8 @@
 
 .inputContainer > input:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #e6e9ee;
+  box-shadow: 0 0 3px rgba(240, 241, 243, 0.1);
 }
 
 .button {

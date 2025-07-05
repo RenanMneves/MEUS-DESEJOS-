@@ -1,0 +1,26 @@
+.container {
+  min-height: 42vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 7rem;
+}
+
+.message {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(13, 69, 136, 0.95);
+}

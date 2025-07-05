@@ -22,17 +22,19 @@ export const Header = ({ onSearch, onClear }) => {
           <div className={styles.searchGroup}>
             <input
               type="text"
-              placeholder="pesquisar desejos...."
+              placeholder="Pesquisar desejos...."
               value={searchValue}
               onChange={handleChange}
               className={styles.input}
             />
-            <button type="submit" className={styles.button}>
-              pesquisar
-            </button>
-            <button type="button" onClick={onClear} className={styles.clear}>
-              limpar
-            </button>
+            <div className={styles.actions}>
+              <button type="submit" className={styles.button}>
+                Pesquisar
+              </button>
+              <button type="button" onClick={onClear} className={styles.clear}>
+                Limpar
+              </button>
+            </div>
           </div>
         </form>
       </div>
