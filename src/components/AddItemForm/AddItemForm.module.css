@@ -8,7 +8,7 @@
   justify-content: center;
   border-radius: 8px;
   background-position: right;
-  background-image: url(https://img.elo7.com.br/product/zoom/3F685E9/quadro-led-painel-luminoso-rgb-gamer-call-of-duty-76x20cm-microsft.jpg);
+  background-image: url(https://tse1.mm.bing.net/th/id/OIP.yvne9cX4aMw3uuc4rRQMpwAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3);
 }
 
 .inputContainer {
@@ -34,7 +34,7 @@
 }
 
 .button {
-  background-color: rgba(13, 69, 136, 0.95);
+  background-color: rgba(1, 4, 8, 0.95);
   color: #cdd9e6;
   padding: 8px;
   border: none;
@@ -47,7 +47,7 @@
 }
 
 .button:hover {
-  background-color: rgba(27, 96, 181, 0.95);
+  background-color: rgba(0, 3, 7, 0.95);
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(59, 130, 246, 0.4);
 }

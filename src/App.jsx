@@ -5,10 +5,9 @@ import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { AddItemForm } from "./components/AddItemForm/AddItemForm";
 
-function App() {
+function App({ search }) {
   const [wishs, setWishs] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [search, setSearch] = useState("");
   const [form, setForm] = useState({
     name: "",
     description: "",
@@ -61,25 +60,12 @@ function App() {
       );
     });
   }, [search, wishs]);
-  const onSearch = useCallback((searchValue) => {
-    setSearch(searchValue);
-  });
-  const onClear = useCallback(() => {
-    setSearch("");
-  });
+
   return (
-    <div className={styles.app}>
-      <Header onSearch={onSearch} onClear={onClear} />
-      <main className={styles.main}>
-        <AddItemForm
-          handleSubmit={handleSubmit}
-          form={form}
-          setForm={setForm}
-        />
-        <CardGrid wishs={filtereWishs} handleDelete={handleDelete} />
-      </main>
-      <Footer />
-    </div>
+    <main className={styles.main}>
+      <AddItemForm handleSubmit={handleSubmit} form={form} setForm={setForm} />
+      <CardGrid wishs={filtereWishs} handleDelete={handleDelete} />
+    </main>
   );
 }
 
