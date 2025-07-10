@@ -5,25 +5,23 @@ import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { AddItemForm } from "./components/AddItemForm/AddItemForm";
 
+const DEFAULT_FORM = {
+  name: "",
+  description: "",
+  urlImage: "",
+  date: "",
+  id: "",
+};
+
 function App({ search }) {
   const [wishs, setWishs] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [form, setForm] = useState({
-    name: "",
-    description: "",
-    urlImage: "",
-    date: "",
-  });
+  const [form, setForm] = useState(DEFAULT_FORM);
   const handleSubmit = (e) => {
     e.preventDefault();
     const updatedWishs = [...wishs, form];
     setWishs(updatedWishs);
-    setForm({
-      name: "",
-      description: "",
-      urlImage: "",
-      date: "",
-    });
+    setForm(DEFAULT_FORM);
   };
   const handleDelete = (indexToDelete) => {
     const updatedWishs = wishs.filter((_, index) => index !== indexToDelete);
